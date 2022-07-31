@@ -1,0 +1,19 @@
+{
+  "feedback": [
+    {
+      "id": 1,
+      "rating": 10,
+      "text": "The product was the best thing I have ever bought. I use it for everthing and just bought three more."
+    },
+    {
+      "id": 2,
+      "rating": 7,
+      "text": "The product was alright and got the job done, but it was not as good as the first guy claimed."
+    },
+    {
+      "id": 3,
+      "rating": 1,
+      "text": "The product was cheap and unreliable. It broke after one use. I will never buy from this company again."
+    }
+  ]
+}
