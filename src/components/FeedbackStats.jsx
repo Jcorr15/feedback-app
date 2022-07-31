@@ -4,14 +4,9 @@ import FeedbackContext from '../context/FeedbackContext';
 function FeedbackStats() {
   const { feedback } = useContext(FeedbackContext);
 
-  let average =
-    feedback.reduce((acc, cur) => {
-      return (acc += cur.rating);
-    }, 0) / feedback.length;
-
-  // Make average only have one decimal place
-  // Use a regular expression to replace the decimal when it is zero
-  average = average.toFixed(1).replace(/[.,]0$/, '');
+  let average = Math.round(
+    feedback.reduce((acc, { rating }) => acc + rating, 0) / feedback.length
+  );
 
   return (
     <div className="feedback-stats">
